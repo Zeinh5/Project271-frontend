@@ -1,0 +1,89 @@
+.register{
+    background-image: url('../../assets/loginbg2.jpg');
+    background-size: cover;
+    background-position: center center; /* Center the background image both horizontally and vertically */
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    position: relative;
+    top: 5rem;
+    left: -400px;      
+    transform: translate(140%, -10%);
+    width: 600px;
+    height: 480px;
+    background: #f3e9de;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    box-shadow: 0 0 30px var(--color-gray-200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    z-index: 2;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.register-input, select, textarea{
+    background: #eadbcb;
+    margin-left: -30%;
+    width: 170%;
+    padding: .7rem 3rem;
+    border-radius: var(--border-radius-1);
+    resize: none;
+}
+
+.form-message{
+    background: var(--color-danger);
+    color: var(--color-beige);
+    font-size: .8rem;
+    padding: .8rem 1.1rem;
+    display: block;
+    margin-bottom: 1.1rem;
+    border-radius: var(--border-radius-1);
+}
+
+.form-container1{
+    width: 150%;
+}
+
+.register-form{
+    display: flex; 
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.login-form{
+    display: flex; 
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.form-container2{
+    width: 75%;
+}
+
+
+.form-container h2{
+    margin-bottom: 2rem;
+}   
+
+.form-container small{
+    margin-top: 1.5rem;
+    display: block;
+}
+
+.form-container small a{
+    color: var(--color-primary); 
+} 

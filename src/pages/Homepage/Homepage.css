@@ -1,0 +1,146 @@
+.search-bar-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-mode-toggle {
+    padding: 0.3rem 0; 
+    border: 0.2rem solid transparent;
+    border-radius: 0;
+    font-size: 1rem;
+    outline: none;
+    margin: 2rem 10rem 2rem 0;
+    width: 6.5%;
+}
+
+.search-bar {
+    width: 80%;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--color-gray-400);
+    border-radius: 0rem;
+    font-size: 1rem;
+    outline: none;
+    margin: 2rem auto; 
+    display: block; 
+}
+
+.search-bar .user-bar {
+    background: white;
+}
+
+.search-bar::placeholder {
+    color: var(--color-gray-500);
+}
+
+.search-bar:focus {
+    border-color: var(--color-primary);
+}
+
+.search-icon {
+    position: absolute;
+    margin-left: 82.2%;
+    background: transparent;
+}
+
+.userPosts-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    margin-top: 2rem; 
+}
+
+.posts-container,
+.categoryPost-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.head-post-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding-top: 5rem;
+    align-items: flex-start; 
+    margin-bottom: 3rem; 
+}
+
+.head-post-container.post-image {
+    padding-top: 150%;
+    height: fit-content;
+}
+
+.head-post-container h1 {
+    margin-bottom: 0.5rem;
+    text-align: center; /* Change to center alignment */
+    font-size: 2.4rem;
+    line-height: 1.4;
+    color: var(--color-gray-900);
+}
+
+.head-post-container p {
+    text-align: center; /* Change to center alignment */
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.post {
+    background: var(--color-beige);
+    padding: 1rem;
+    border-radius: var(--border-radius-4);
+    border: 2px solid hsl(30, 76%, 88%);
+    padding-bottom: 2rem;
+    transition: var(--transition);
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.post:hover {
+    box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.post-image {
+    border-radius: var(--border-radius-3);
+    overflow: hidden;
+    height: 16rem;
+}
+
+.post-image img {
+    width: 100%; /* Adjust to fill the container */
+    height: 100%;
+    object-fit: cover; /* Ensure image covers the container */
+}
+
+.post-content {
+    margin-top: 1.5rem;
+}
+
+.post-content h3 {
+    margin: 1rem 0 0.6rem;
+}
+
+.post-footer {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+
+.post-author {
+    display: flex;
+    gap: 1rem;
+    align-items: center; /* Adjust alignment to center */
+}
+
+.post-author-image {
+    width: 2.8rem;
+    height: 2.8rem; /* Ensure consistent dimensions */
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--color-light);
+}
+
+.page-title {
+    text-align: center;
+    margin: 4rem auto;
+}

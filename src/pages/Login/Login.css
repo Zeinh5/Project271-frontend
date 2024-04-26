@@ -1,0 +1,58 @@
+.login {
+    background-image: url('../../assets/loginbg1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper-login {
+    position: relative;
+    top: 50%;
+    left: 50%;      
+    transform: translate(-50%, -50%);
+    width: 37.5rem; /* 600px converted to rem */
+    max-width: 100%;
+    padding: 2.5rem; /* 40px converted to rem */
+    background: #f3e9de;
+    border: 0.125rem solid rgba(255, 255, 255, .5); /* 2px converted to rem */
+    border-radius: var(--border-radius); /* Using the defined border radius */
+    box-shadow: 0 0 1.875rem rgba(0, 0, 0, 0.1); /* 30px converted to rem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Adjust the width and margin of inputs to be responsive and centered */
+input, select, textarea {
+    /* background: #eadbcb; */
+    width: 100%;
+    padding: 0.7rem 3rem;
+    border-radius: var(--border-radius);
+    resize: none;
+}
+
+/* Further styling can be adjusted as per your design requirements */

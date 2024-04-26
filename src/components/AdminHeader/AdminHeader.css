@@ -1,0 +1,54 @@
+/* header.css */
+.nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: transparent;
+    height: 6.5rem;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.3s ease;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-logo {
+    font-family: 'Poppins';
+    display: flex;
+    align-items: center;
+    color: #dac0a3;
+    height: auto; 
+    font-size: 1.8rem; 
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav-menu li a {
+    color: #dac0a3;
+}
+
+.nav-menu li a:hover {
+    color: var(--color-light);
+    transition: var(--transition);
+    background: var(--color-light);
+    transition: var(--transition);
+    border: none;
+    border-radius: var(--border-radius-1);
+}
+
+.nav-toggle-button {
+    background: transparent;
+    color: var(--color-beige);
+    display: none;
+}

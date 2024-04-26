@@ -1,0 +1,63 @@
+/* AdminPage.css */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.landing-page {
+    height: 100vh;
+}
+
+.hero-container {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.title {
+    position: relative;
+    top: -3.125rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-beige);
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.3125rem;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.section {
+    position: relative;
+    padding: 4rem 0;
+    background-color: var(--color-beige);
+    z-index: 1;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.25rem;
+}
+
+.item {
+    background-color: var(--color-beige);
+    border-radius: 0.625rem;
+    padding: 1.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.item-title {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.item-description {
+    margin-top: 0;
+    color: #666;
+}
+
+.solid-color-background {
+    background-color: var(--color-beige);
+}

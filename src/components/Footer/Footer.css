@@ -1,0 +1,21 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--color-primary);
+    padding-top: 5em;
+}
+
+.footer-copyright {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%; /* Ensure full width */
+    color: var(--color-beige);
+    border-top: 1px solid var(--color-light);
+    font-weight: 300;
+}
