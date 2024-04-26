@@ -15,7 +15,7 @@ const AdminReports = () => {
   const fetchReports = async (userId) => {
     try {
       // Include admin ID in the request headers
-      const response = await axios.get('http://localhost:8080/report', {
+      const response = await axios.get('/report', {
         params: {
           'userId': userId
         }

@@ -30,7 +30,7 @@ export default function Profile() {
           return;
         }
   
-        const response = await axios.get(`http://localhost:8080/profile/${userId}`);
+        const response = await axios.get(`/profile/${userId}`);
         setProfileData(response.data);
         setEditedProfileData(response.data);
       } catch (error) {
@@ -65,7 +65,7 @@ export default function Profile() {
     }
 
     try {
-      const response = await axios.post('http://localhost:8080/profile', formData, {
+      const response = await axios.post('/profile', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }

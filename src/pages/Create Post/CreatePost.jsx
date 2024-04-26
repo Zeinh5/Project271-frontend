@@ -75,7 +75,7 @@ export default function CreatePost() {
     // selectedTags.forEach(tag => formData.append('tags', tag.value));
 
     try {
-      const response = await axios.post('http://localhost:8080/posts', formData);
+      const response = await axios.post('/posts', formData);
       if (response.status === 201) {
         setTitle('');
         setContent('');

@@ -12,7 +12,7 @@ function ChatList() {
     const fetchChats = async () => {
       try {
         const userId = localStorage.getItem('userId');
-        const response = await axios.get('http://localhost:8080/chats', {
+        const response = await axios.get('/chats', {
           params: { userId }
         });
         console.log(response.data);  // Log the entire response data

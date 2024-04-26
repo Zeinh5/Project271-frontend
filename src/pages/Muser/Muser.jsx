@@ -15,7 +15,7 @@ export default function Muser() {
   const fetchUserData = async () => {
     try {
       // Replace 'backend_endpoint' with the actual endpoint to fetch user data
-      const response = await fetch('http://localhost:8080/muser/${params.muserId}');
+      const response = await fetch('/muser/${params.muserId}');
       const userData = await response.json();
       setMuser(userData);
     } catch (error) {

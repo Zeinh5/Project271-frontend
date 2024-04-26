@@ -25,7 +25,7 @@ const Register = () => {
 
         try {
             // Send POST request to your backend
-            const response = await axios.post('http://localhost:8080/register', formData);
+            const response = await axios.post('/register', formData);
             console.log('Server Response:', response.data);
             alert('Registration successful! Please check your email to verify your account.');
         } catch (error) {

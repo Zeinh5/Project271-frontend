@@ -32,7 +32,7 @@ const Homepage = () => {
     setIsLoading(true);
     setError('');
     try {
-      const response = await axios.get('http://localhost:8080/search', { params: { type: searchType === 'users' ? 'username' : 'tags', query: searchTerm }});
+      const response = await axios.get('/search', { params: { type: searchType === 'users' ? 'username' : 'tags', query: searchTerm }});
         setResults(response.data);
     } catch (err) {
         setError(err.response?.data?.error || 'Unknown error');

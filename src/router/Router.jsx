@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 // Components ................
 import HeaderContent from "../components/HeaderContent/HeaderContent"
 import Footer from "../components/Footer/Footer"
+import axios from "axios";
 
 // Pages....................
 import LandingPage from '../pages/LandingPage/LandingPage'
@@ -24,6 +25,7 @@ import AdminPage from '../pages/AdminPage/AdminPage'
 import AdminReports from '../pages/AdminReports/AdminReports'
 
 export default function Router() {
+  axios.defaults.baseURL = "https://project271-backend-3.onrender.com/";
   return (
     <>
     <BrowserRouter>

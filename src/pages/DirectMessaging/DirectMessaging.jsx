@@ -10,7 +10,7 @@ function ChatHistory({ match }) {
     const fetchMessages = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get(`http://localhost:8080/messages/${userId}`, {
+        const response = await axios.get(`/messages/${userId}`, {
           headers: {
             'Authorization': `Bearer ${token}`
           }

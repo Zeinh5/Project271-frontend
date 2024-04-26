@@ -19,7 +19,7 @@ export default function Login() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:8080/login", { // Corrected the URL to the login endpoint
+      const response = await fetch("/login", { // Corrected the URL to the login endpoint
         method: "POST",
         headers: {
           "Content-Type": "application/json",

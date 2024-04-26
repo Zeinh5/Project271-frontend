@@ -17,13 +17,13 @@ const Posts = ({ searchMode, searchTerm, searchInitiated }) => {
       try {
 
         if (searchInitiated) {  
-          const response = await axios.get('http://localhost:8080/search', {params : {type:searchMode==='users'?'username':'tags', 
+          const response = await axios.get('/search', {params : {type:searchMode==='users'?'username':'tags', 
                                                                                     query:searchTerm}});
           setPosts(response.data);
 
 
         } else {
-          const response = await axios.get('http://localhost:8080/posts');
+          const response = await axios.get('/posts');
           setPosts(response.data);
         }
       } catch (error) {
