@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import './Login.css';
+import axios from 'axios';
 
 export default function Login() {
   const navigate = useNavigate(); // Hook to navigate
@@ -19,7 +20,7 @@ export default function Login() {
     e.preventDefault();
 
     try {
-      const response = await fetch("/login", { // Corrected the URL to the login endpoint
+      const response = await axios("/login", { // Corrected the URL to the login endpoint
         method: "POST",
         headers: {
           "Content-Type": "application/json",
